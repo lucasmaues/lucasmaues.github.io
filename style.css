@@ -9,13 +9,13 @@
 @media all and (max-width:1400px) {
 .box { width:33.33333333333333%; }
 }
-@media all and (max-width:1000px) {
+@media all and (max-width:1024px) {
 .box { width:50%; font-size: 40px; }
 }
 @media all and (max-width:800px) {
 .box { width:50%; }
 }
-@media all and (max-width: 700px) {  
+@media all and (max-width: 600px) {  
 .box { width:100%; }
 }
 
