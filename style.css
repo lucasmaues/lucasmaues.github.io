@@ -1,16 +1,16 @@
 <style type="text/css">
 
 @media all and (min-width:2000px) {
-.box { width:25%; }
+.box { width:25%; font-size: 36px; }
 }
 @media all and (max-width:1999px) {
-.box { width:25%; }
+.box { width:25%; font-size: 36px; }
 }
 @media all and (max-width:1400px) {
 .box { width:33.33333333333333%; }
 }
 @media all and (max-width:1000px) {
-.box { width:50%; }
+.box { width:50%; font-size: 40px; }
 }
 @media all and (max-width:800px) {
 .box { width:50%; }
@@ -26,19 +26,18 @@ a.box {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	font-size: 36px;
 	font-weight: 400;
-	border-radius: 0px;
+	border-radius: 30px;
 	outline:none;
-	font-family: 'Lucida Grande', Arial, sans-serif;
 	background-color: rgba(255, 255, 255, 0.0);
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 a.box:hover, a.box:focus { 
-	background-color: rgba(255, 255, 255, 0.1);
+
 }
 .title {
 	display: inline-block;
@@ -62,33 +61,80 @@ a.box:hover, a.box:focus {
 	height: 360px;
 	width: 90%;
 	margin: 5% 0 5% 0;
-	border-radius: 0px;
+	border-radius: 30px;
 }
-.section { 
+#section { 
 	position: relative;
 	float: left; 
 	margin: 0; 
 	padding: 0; 
 	height: auto; 
 	width: 100%; 
-	background-color: transparent; 
+	background-color: rgba(255, 255, 255, 0.0); 
 }
-.page_title { 
+
+#footer {
+	float:left;
 	text-align: center; 
 	color: rgba(255, 255, 255, 1.5); 
-	font: 90px 'Lucida Grande', Arial, sans-serif; 
-	font-weight: 100;
+	font-weight: 400;
+	height:auto; 
+	width:80%;
+	margin: 20px 0 0 0;
+	padding: 25px 10% 25px 10%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+h1 { 
+	text-align: center; 
+	color: rgba(255, 255, 255, 1.5);
+	font-weight: 500;
+	font-size: 90px;
 	text-transform: uppercase;
 	height:auto; 
 	width:100%;
 	margin: 0 0 20px 0;
 	padding: 25px 0 25px 0;
 	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 0px;
+}
+body {
+background-color: #777;
+margin: 0px;
+font-family: 'Roboto', Arial, sans-serif; 
 }
 
-html {
-background-color: #333;
-}
+.facebook { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/facebook.png); }
+.color_facebook:hover, .color_facebook:focus { background-color: #3b579d; }
+.twitter { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/twitter.png); }
+.color_twitter:hover, .color_twitter:focus { background-color: #55acee; }
+.youtube { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/youtube.png); }
+.color_youtube:hover, .color_youtube:focus { background-color: #cd201f; }
+.google_plus { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/google_plus.png); }
+.color_google_plus:hover, .color_google_plus:focus { background-color: #dd4b39; }
+.grooveshark { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/grooveshark.png); }
+.color_grooveshark:hover, .color_grooveshark:focus { background-color: #FF8300; }
+.vine { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/vine.png); }
+.color_vine:hover, .color_vine:focus { background: #00bf8f; }
+.instagram { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/instagram.png); }
+.color_instagram:hover, .color_instagram:focus { background-color: #1c5380; }
+.flickr { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/flickr_.png); }
+.color_flickr:hover, .color_flickr:focus { background-color: #ff0084; }
+.skype { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/skype.png); }
+.color_skype:hover, .color_skype:focus { background-color: #00aff0; }
+.spotify { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/spotify.png); }
+.color_spotify:hover, .color_spotify:focus { background-color: #4da400; }
+.soundcloud { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/soundcloud.png); }
+.color_soundcloud:hover, .color_soundcloud:focus { background-color: #FF5500; }
+.pinterest { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/pinterest.png); }
+.color_pinterest:hover, .color_pinterest:focus { background-color: #cb2027; }
+.xbox_live { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/xbox_live.png); }
+.color_xbox_live:hover, .color_xbox_live:focus { background-color: #cb2027; }
+.dribbble { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/dribbble.svg); }
+.color_dribbble:hover, .color_dribbble:focus { background-color: #ea4c89; }
+.foursquare { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/foursquare.png); }
+.color_foursquare:hover, .color_foursquare:focus { background-color: #00aeef; }
+.linkedin { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/linkedin.png); }
+.color_linkedin:hover, .color_linkedin:focus { background-color: #0073b2; }
+.github { background-image: url(file:///E:/Projects/Lucas%20Mauess/img/github.png); }
+.color_github:hover, .color_github:focus { background-color: #333333; }
 
 </style>
