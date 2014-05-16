@@ -1,0 +1,95 @@
+<style type="text/css">
+
+@media all and (min-width:2000px) {
+.box { width:25%; }
+}
+@media all and (max-width:1999px) {
+.box { width:25%; }
+}
+@media all and (max-width:1400px) {
+.box { width:33.33333333333333%; }
+}
+@media all and (max-width:1000px) {
+.box { width:50%; }
+}
+@media all and (max-width:800px) {
+.box { width:50%; }
+}
+@media all and (max-width: 700px) {  
+.box { width:100%; }
+}
+
+a.box {
+	float: left;
+	height: auto;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 400;
+	border-radius: 0px;
+	outline:none;
+	font-family: 'Lucida Grande', Arial, sans-serif;
+	background-color: rgba(255, 255, 255, 0.0);
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+a.box:hover, a.box:focus { 
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.title {
+	display: inline-block;
+	overflow: hidden;
+	white-space: pre-line;
+	width: auto;
+	height: auto;
+	border-radius: 0px;
+	margin: 282px 5% 0 5%;
+	padding: 5px 15px 5px 15px;
+	text-overflow: ellipsis;
+	background-color: rgba(255, 255, 255, 0.0);
+}
+.icon {
+	background-repeat: no-repeat; 
+	background-position: 50% 36%;
+	background-size: 210px 210px;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	vertical-align: top;
+	height: 360px;
+	width: 90%;
+	margin: 5% 0 5% 0;
+	border-radius: 0px;
+}
+.section { 
+	position: relative;
+	float: left; 
+	margin: 0; 
+	padding: 0; 
+	height: auto; 
+	width: 100%; 
+	background-color: transparent; 
+}
+.page_title { 
+	text-align: center; 
+	color: rgba(255, 255, 255, 1.5); 
+	font: 90px 'Lucida Grande', Arial, sans-serif; 
+	font-weight: 100;
+	text-transform: uppercase;
+	height:auto; 
+	width:100%;
+	margin: 0 0 20px 0;
+	padding: 25px 0 25px 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+}
+
+html {
+background-color: #333;
+}
+
+</style>
