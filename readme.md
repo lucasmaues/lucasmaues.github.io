@@ -10,11 +10,10 @@ The objective of this repository is to gather information about me in a single w
 
 See: [lucasmauess.github.io](http://lucasmauess.github.io/)
 
-## browser support
+## Browser Support
 
-![IE](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_Internet_Explorer.png) | ![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png) | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png) | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png) | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png)
- --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- |
- IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |		 IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+![IE](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_internet_explorer.png) | ![Chrome](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_chrome.png) | ![Firefox](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_firefox.png) | ![Opera](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_opera.png) | ![Safari](https://raw.githubusercontent.com/lucasmauess/lucasmauess.github.io/master/img/_safari.png)
+ --- | --- | --- | --- | --- |		 IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
 ## how to create a page like this?
 
