@@ -352,7 +352,7 @@ header {
 section, footer { 
 	position: relative;
 	float: left; 
-	padding: 2% 2%;
+	padding: 4% 2%;
 	height: auto; 
 	width: 96%;
 	background-color: red;
@@ -424,8 +424,8 @@ BACKGROUNDS
 .bg-white {
 	background-color: #ffffff;
 }
-.bg-img-boll {
-  background-image: url('../images/nyc.jpg');
+.bg-img-full {
+  background-image: url('../images/full.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -471,7 +471,7 @@ a.box {
 	text-decoration: none;
 	color: #fff;
 	outline: none;
-  background-color: #999;
+  background-color: rgba(85, 85, 85, 0.4);
   border: 1px solid rgba(68, 68, 68, 0.01);
 }
 a.box:hover {
