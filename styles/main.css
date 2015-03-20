@@ -39,8 +39,8 @@ MEDIA QUERIES
   }
   header h1 a span { 
     font-weight: 300; 
-    font-family: Roboto-Light; 
-    font-size: 56px; 
+    font-family: 'Roboto-Light', sans-serif; 
+    font-size: 53px; 
   }
   section h2 { 
     font-size: 40px; 
@@ -86,10 +86,10 @@ MEDIA QUERIES
     color: #fff;
     background-color: #3C3C3C; 
   }
-  header h1 a span { 
+  header h1 a span {
     font-weight: 300; 
-    font-family: Roboto-Light; 
-    font-size: 56px; 
+    font-family: 'Roboto-Light', sans-serif; 
+    font-size: 53px; 
   }
   section h2 {
     font-size: 40px;
