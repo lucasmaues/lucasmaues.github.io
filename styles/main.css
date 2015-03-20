@@ -122,6 +122,7 @@ MEDIA QUERIES
     right: 0; 
   }
   header h1 a, header h1 a span { 
+    font-family: 'Roboto-Light', sans-serif;
     color: #fff;
     font-size: 34px;
     padding-top: 7px;
@@ -408,6 +409,7 @@ input#control-nav {
 }
 .active-page {
   color: #fff;
+  background-color: #3C3C3C;
   font-family: Roboto-Regular;
 }
 
@@ -428,7 +430,7 @@ BACKGROUNDS
   background-image: url('../images/full.jpg');
   background-position: center center;
   background-size: cover;
-  background-attachment: inherit;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
