@@ -353,7 +353,7 @@ header {
 section, footer { 
 	position: relative;
 	float: left; 
-	padding: 4% 2%;
+	padding: 2% 2%;
 	height: auto; 
 	width: 96%;
 	background-color: red;
@@ -384,18 +384,19 @@ header nav {
 header ul {
   padding: 32px 0;
   background-color: transparent;
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 16px;
 }
 header li a {
   display: block;
-  text-align: left;
-  width: 200px;
+  width: 100%;
   outline: none;
-  padding: 0 0 0 40px;
+  padding: 0 0;
   color: #aaa;
-  font-size: 16px;
   line-height: 48px;
-  font-family: Roboto-Light;
+  text-transform: uppercase;
   text-decoration: none;
+  /* text-align: left; */
 }
 header li a:hover, header li a:focus {
   color: #fff;
