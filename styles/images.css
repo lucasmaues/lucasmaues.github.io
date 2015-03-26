@@ -1,5 +1,5 @@
 #logo {
-	background: transparent url('../ images/i.jpg') no-repeat center;
+	background: transparent url('../images/l.jpg') no-repeat center;
 	background-size: 144px;
  	height: 140px;
  	width: 140px;
@@ -34,7 +34,7 @@ SOCIAL ICONS
 .skype-icon { background-image: url('../images/icons/skype.png'); }
 .skype-color:hover { background-color: #00aff0; }
 .spotify-icon { background-image: url('../images/icons/spotify.png'); }
-.spotify-color:hover { background-color: #4da400; }
+.spotify-color:hover { background-color: #2ebd59; }
 .soundcloud-icon { background-image: url('../images/icons/soundcloud_.png'); }
 .soundcloud-color:hover { background-color: #FF5500; }
 .pinterest-icon { background-image: url('../images/icons/pinterest.png'); }
