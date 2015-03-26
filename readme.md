@@ -31,4 +31,4 @@ Code and Design by Lucas Mauess.
 
 ## License
 
-Copyright © 2015 Lucas Mauess. [MIT License](http://mit-license.org/)
+[MIT License](http://mit-license.org/)
