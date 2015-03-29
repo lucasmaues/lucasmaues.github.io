@@ -1,85 +1,90 @@
 <!DOCTYPE html>
-<!-- Code and Design by @LucasMauess -->
+<!-- Code and Design by Lucas Mauess -->
 <html lang="en">
     <head>
         <title>Page Not Found — Lucas Mauess</title>
-        <meta charset="utf-8">    
+        <!-- Compatibility -->
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <link rel="stylesheet" href="styles/images.css" type="text/css"/>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png">
+
         <style>
-            @font-face { font-family: Roboto-Light; src: url('fonts/Roboto-Light.ttf'); }
-            @font-face { font-family: Roboto-Regular; src: url('fonts/Roboto-Regular.ttf'); }
-            * {
-                line-height: 1.2;
-                margin: 0;
-                transition: all 500ms ease;
-            }
-            html {
-                color: #999;
-                display: table;
-                font-family: 'Roboto-Regular', sans-serif;
-                height: 100%;
-                text-align: center;
-                width: 100%;
-            }
-            body {
-                display: table-cell;
-                vertical-align: middle;
-                margin: 2em auto;
-            }
             h1 {
                 color: #ddd;
                 font: 10em 'Roboto-Light', sans-serif;
             }
             h2 {
-                color: #555;
+                color: #888;
                 font-size: 2em;
+                font-family: 'Roboto-Regular', sans-serif;
                 font-weight: 400;
+                padding: 0px;
             }
-            p {
-                margin: 40px auto;
+            h3 {
+                margin: 30px auto;
                 width: 280px;
+                color: #999;
+                font-size: 16px;
+                text-align: center;
             }
-            a {
-                display: inline-block;
-                height: auto;
-                width: 120px;
-                padding: 10px;
-                margin: 6px;
-                text-decoration: none;
-                border-radius: 0px;
-                color: #fff;
-                background-color: #666;
-                border: 1px solid #fff;
-                text-transform: uppercase;
-                font: 18px Roboto-Light;
+            .container-2 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin-left: -240px;
+                display: table;
             }
-            a:hover, a:focus {
-                color: #555;
-                background-color: #fff;
-                border: 1px solid #666;
+            .content {
+                text-align: center;
+                vertical-align: middle;
+                display: table-cell;
+                padding-left: 240px;
             }
-            @media only screen and (max-width: 280px) {
 
-                body, p {
-                    width: 95%;
-                }
-                h1 {
-                    font-size: 1.5em;
-                    margin: 0 0 0.3em;
-                }
+            @media only screen and (max-width: 900px) {
+                .container-2 { margin: -60px 0 0 0 !important; }
+                .content { padding: 0 !important; }
             }
+
         </style>
     </head>
     <body>
-        <h2>Error</h2>
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <p>Sorry, but the requested URL not found on this server (or does not exist, or is no longer available). Try these links:</p>
-        <a href="http://lucasmauess.github.io/">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+
+        <header>
+        
+            <figure id="logo"></figure>
+            <h1><a href="index.html"><span>LUCAS</span> MAUESS</a></h1>
+
+            <input type="checkbox" id="control-nav"/>
+            <label for="control-nav" class="control-nav"></label>
+            <label for="control-nav" class="control-nav-close"></label>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projetcs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="copyright">Lucas Mauess © 2015<p><a href="http://mit-license.org/" target="_blank">MIT Licence</a> — <a href="http://pages.github.com/" target="_blank">GitHub Pages</a></p></div>
+            </nav>
+
+        </header>
+
+        <div class="container-2">    
+            <div class="content">
+                <h2>Error</h2>
+                <h1>404</h1>
+                <h2>Page Not Found</h2>
+                <h3>Sorry, but the requested URL not found on this server, or does not exist, or is no longer available.</h3>
+            </div>
+        </div>
+
     </body>
 </html>

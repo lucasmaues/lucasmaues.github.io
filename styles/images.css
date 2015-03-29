@@ -71,9 +71,11 @@ SOCIAL ICONS
 .myspace-color:hover { background-color: #333; }
 .reddit-icon { background-image: url('../images/icons/reddit.png'); }
 .reddit-color:hover { background-color: #0079d3; }
+.rdio-icon { background-image: url('../images/icons/rdio.png'); }
+.rdio-color:hover { background-color: #008fd5; }
 
 /*
-PROJECTS - ICONS
+PROJECTS ICONS
 */
 
 .icon-1 { background-image: url('https://lh5.googleusercontent.com/-kpl9cF1th5U/Ugg9UAuQGpI/AAAAAAAACkY/-EGRtKI8rwc/11.png'); }
@@ -88,7 +90,7 @@ PROJECTS - ICONS
 .icon-10 { background-image: url('https://lh3.googleusercontent.com/-Mktv68b3HMg/Ugf2_i21i_I/AAAAAAAACjs/L5pK_FsnVCg/9.png'); }
 
 /*
-PROJECTS - BACKGROUNDS
+PROJECTS BACKGROUNDS
 */
 
 .green { background-color: #27ae60; }
