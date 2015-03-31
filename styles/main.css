@@ -2,11 +2,30 @@
 FONTS
 */
 
-@font-face { font-family: Roboto-Thin; src: url('../fonts/Roboto-Thin.ttf'); }
-@font-face { font-family: Roboto-Light; src: url('../fonts/Roboto-Light.ttf'); }
-@font-face { font-family: Roboto-Regular; src: url('../fonts/Roboto-Regular.ttf'); }
-@font-face { font-family: Roboto-Medium; src: url('../fonts/Roboto-Medium.ttf'); }
-@font-face { font-family: Roboto-Black; src: url('../fonts/Roboto-Black.ttf'); }
+@font-face { 
+  font-family: 'Roboto-Thin'; 
+  src: url('../fonts/Roboto-Thin.ttf') format("opentype");
+  font-weight: 300;
+  }
+@font-face { 
+  font-family: 'Roboto-Light'; 
+  src: url('../fonts/Roboto-Light.ttf') format("opentype");
+  font-weight: 300;
+  }
+@font-face { 
+  font-family: 'Roboto-Regular'; 
+  src: url('../fonts/Roboto-Regular.ttf') format("opentype"); 
+  font-weight: 400;
+}
+@font-face { 
+  font-family: 'Roboto-Medium'; 
+  src: url('../fonts/Roboto-Medium.ttf') format("opentype");
+  font-weight: 500;
+  }
+@font-face { font-family: 'Roboto-Bold'; 
+  src: url('../fonts/Roboto-Bold.ttf') format("opentype");
+  font-weight: 700;
+ }
 
 /*
 MEDIA QUERIES
@@ -45,7 +64,6 @@ MEDIA QUERIES
     padding: 5px 5px; 
     font-weight: 700; 
     text-decoration: none; 
-    outline: none; 
     color: #aaa;
     line-height: 140%;
     letter-spacing: 6px;
@@ -74,6 +92,7 @@ MEDIA QUERIES
   }
   a.box-post { width: 17.2%; }
   a.box-pro { width: 17.2%; }
+  .active-page-title { font-size: 86px; font-family: 'Roboto-Light'; }
   .content-box-home { padding: 60px; }
 }
 
@@ -96,7 +115,6 @@ MEDIA QUERIES
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    outline: none;
     color: #aaa;
     line-height: 140%;
     letter-spacing: 6px;
@@ -123,6 +141,7 @@ MEDIA QUERIES
     width: 132px; 
   }
   .content-box-home { padding: 40px; }
+  .active-page-title { font-size: 66px; font-family: 'Roboto-Thin'; }
 }
 
 @media all and (max-width: 900px) {
@@ -158,6 +177,7 @@ MEDIA QUERIES
     display: none; 
   }
   .content-box-home { padding: 15px 0; }
+  .active-page-title { font-size: 36px; font-family: 'Roboto-Light'; }
 
   /* 
   NAV
@@ -357,12 +377,14 @@ section, footer {
 }
 a {
   color: #888;
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: 500;
   text-decoration: none;
   transition: all 300ms ease-in-out; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out;
 }
 a:hover, a:focus {
-  color: #444;
+  color: #333;
+
 }
 
 ::selection { 
@@ -393,12 +415,11 @@ header nav {
 header ul {
   padding: 32px 0;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1.0em;
 }
 header li a {
   display: block;
   width: 100%;
-  outline: none;
   padding: 0;
   color: #aaa;
   line-height: 46px;
@@ -450,14 +471,14 @@ h2 span {
   font-style: italic;
 }
 .active-page-title {
-  font-size: 66px;
-  font-family: 'Roboto-Thin';
   font-weight: 300;
   padding: 10px 14%;
   color: #ccc;
   text-transform: uppercase;
 }
-
+.page-description {
+  font-size: 16px;
+}
 /*
 BACKGROUNDS
 */
@@ -532,7 +553,6 @@ a.box {
 	padding: 3px;
 	margin: 4px;
 	text-decoration: none;
-	outline: none;
   background-color: rgba(85, 85, 85, 0.5);
   border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -659,10 +679,10 @@ a.button {
   position: relative;
   display: inline-block;
   float: none; 
-  height: 18px;
-  width: 18px;
-  margin: 0 1.4%; 
-  padding: 14px;
+  height: auto;
+  width: auto;
+  margin: 0 1.6%; 
+  padding: 10px 10px 9px 10px;
   background-color: #fff;
   border-radius: 50px;
   border: 1px solid #fff;
@@ -671,9 +691,16 @@ a.button:hover, a.button:focus {
   background-color: transparent;
   border: 1px solid #999;
   cursor: pointer;
+  color: #999;
+}
+a.button h6 {
+  float: left;
+  font-size: 0.9em;
+  color: #ccc;
 }
 a.button figure {
-  position: relative;
+  float: left;
+  margin-right: 10px;
   width: 18px;
   height: 18px;
   background-size: 18px;
