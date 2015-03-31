@@ -1,4 +1,4 @@
-#logo {
+#photo-logo {
 	background: transparent url('../images/l.jpg') no-repeat center;
 	background-size: 144px;
  	height: 140px;
@@ -7,12 +7,12 @@
   	border: 2px solid #aaa;
   	border-radius: 100px;
 }
-#logo:hover {
+#photo-logo:hover {
 	border: 2px solid #fff;
 }
 
 /*
-SOCIAL ICONS
+SOCIAL
 */
 
 .facebook-icon { background-image: url('../images/icons/facebook.png'); }
@@ -75,23 +75,19 @@ SOCIAL ICONS
 .rdio-color:hover { background-color: #008fd5; }
 
 /*
-PROJECTS ICONS
+PROJECTS
 */
 
 .icon-1 { background-image: url('https://lh5.googleusercontent.com/-kpl9cF1th5U/Ugg9UAuQGpI/AAAAAAAACkY/-EGRtKI8rwc/11.png'); }
 .icon-2 { background-image: url('https://lh3.googleusercontent.com/-P_8TeRsRPbM/UbOHlvQ5DKI/AAAAAAAACec/8aBbVJDysnA/inblug.png'); }
 .icon-3 { background-image: url('https://lh3.googleusercontent.com/-BZ82vnr-x6M/UbN-TW_SHPI/AAAAAAAACdk/ZPtIDBpjS5Q/1.png'); }
 .icon-4 { background-image: url('https://lh5.googleusercontent.com/-8cwd2WLLcic/UbN-TUWIOgI/AAAAAAAACdg/dB0YlCS_XtY/2.png'); }
-.icon-5 { background-image: url('https://lh4.googleusercontent.com/-y4u5Yy2hZjk/UbN-Wn8iZOI/AAAAAAAACd0/By82_bTy8Wo/4.png'); }
+.tecscyfi-icon { background-image: url('../images/projects/tecscyfi.png'); }
 .icon-6 { background-image: url('https://lh4.googleusercontent.com/-uZYZoInUgqE/UbN-XaP7qjI/AAAAAAAACd8/G50Er21ne54/5.png'); }
 .icon-7 { background-image: url('https://lh4.googleusercontent.com/-tvVvM6HtEDc/UggBVLMzTHI/AAAAAAAACj8/0IO5ANbCXbE/10.png'); }
 .icon-8 { background-image: url('https://lh5.googleusercontent.com/-QIZ2Xz-fAAA/UbN-YVq05fI/AAAAAAAACeM/a7_URRiF0Ds/7.png'); }
 .icon-9 { background-image: url('https://lh6.googleusercontent.com/-nAU2qsEo618/UgfyuAO6aSI/AAAAAAAACjc/-jzAB3rHrUQ/8.png'); }
 .icon-10 { background-image: url('https://lh3.googleusercontent.com/-Mktv68b3HMg/Ugf2_i21i_I/AAAAAAAACjs/L5pK_FsnVCg/9.png'); }
-
-/*
-PROJECTS BACKGROUNDS
-*/
 
 .green { background-color: #27ae60; }
 .green-2 { background-color: #2ecc71; }
@@ -104,4 +100,14 @@ PROJECTS BACKGROUNDS
 .pink { background-color:#ff0052; }
 .gray { background-color: #666; }
 
+/*
+BUTTONS
+*/
 
+.button-icon-search {background-image: url('../images/search.png'); }
+.button-icon-share {background-image: url('../images/share.png'); }
+.button-icon-tags {background-image: url('../images/tags.png'); }
+.button-icon-rss {background-image: url('../images/rss.png'); }
+.button-icon-add {background-image: url('../images/add.png'); }
+.button-icon-mail {background-image: url('../images/mail.png'); }
+.button-icon-phone {background-image: url('../images/phone.png'); }

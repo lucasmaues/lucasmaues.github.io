@@ -358,7 +358,7 @@ a {
   transition: all 300ms ease-in-out; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out;
 }
 a:hover, a:focus {
-  color: #666;
+  color: #444;
 }
 
 ::selection { 
@@ -437,7 +437,9 @@ h4 {
   text-align: left;
 }
 h6 {
-	font: 14px 'Roboto-Light', sans-serif;
+	font: 12px 'Roboto-Regular', sans-serif;
+  font-weight: 300;
+  color: #888;
 }
 h2 span {
   font-weight: bold;
