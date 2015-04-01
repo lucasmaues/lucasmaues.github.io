@@ -2,11 +2,7 @@
 FONTS
 */
 
-@font-face { 
-  font-family: 'Roboto-Thin'; 
-  src: url('../fonts/Roboto-Thin.ttf') format("opentype");
-  font-weight: 300;
-  }
+
 @font-face { 
   font-family: 'Roboto-Light'; 
   src: url('../fonts/Roboto-Light.ttf') format("opentype");
@@ -16,13 +12,14 @@ FONTS
   font-family: 'Roboto-Regular'; 
   src: url('../fonts/Roboto-Regular.ttf') format("opentype"); 
   font-weight: 400;
-}
+  }
 @font-face { 
   font-family: 'Roboto-Medium'; 
   src: url('../fonts/Roboto-Medium.ttf') format("opentype");
   font-weight: 500;
   }
-@font-face { font-family: 'Roboto-Bold'; 
+@font-face { 
+  font-family: 'Roboto-Bold'; 
   src: url('../fonts/Roboto-Bold.ttf') format("opentype");
   font-weight: 700;
  }
@@ -129,7 +126,7 @@ MEDIA QUERIES
     font-size: 44px; 
   }
   section p {
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Roboto-Light', sans-serif;
     font-weight: lighter;
     padding: 10px 14%;
@@ -141,7 +138,7 @@ MEDIA QUERIES
     width: 132px; 
   }
   .content-box-home { padding: 40px; }
-  .active-page-title { font-size: 66px; font-family: 'Roboto-Thin'; }
+  .active-page-title { font-size: 56px; font-family: 'Roboto-Regular'; }
 }
 
 @media all and (max-width: 900px) {
@@ -478,6 +475,7 @@ h2 span {
 }
 .page-description {
   font-size: 16px;
+  color: #ccc;
 }
 /*
 BACKGROUNDS
@@ -504,8 +502,7 @@ BACKGROUNDS
   float: left;
   height: auto; 
   width: 96%;
-  padding: 1% 2% 0.6% 2%;
-  margin: 1px 0 0 0;
+  padding: 0 2% 2% 2%;
   background-color: #fff;
   text-align: center;
 }
@@ -654,15 +651,15 @@ a.box-post h2 {
   text-align: center;
 }
 a.box-post h3 {
-  padding: 12px 25px 10px 25px;
-  color: #aaa;
-  font: 200 14px Arial, sans-serif;
+  padding: 8px 25px 6px 25px;
+  color: #ccc;
+  font: 500 15px 'Roboto-Regular', Arial, sans-serif;
   text-align: center;
 }
 a.box-post .bg {
   float: left;
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 a.box-post .img {
   float: left;
@@ -686,21 +683,19 @@ a.button {
   background-color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
+  color: #aaa;
+  font-family: 'Roboto-Regular';
+  font-weight: 500;
+  font-size: 0.9em;
 }
 a.button:hover, a.button:focus {
   background-color: transparent;
-  border: 1px solid #999;
-  cursor: pointer;
+  border: 1px solid #ccc;
   color: #999;
-}
-a.button h6 {
-  float: left;
-  font-size: 0.9em;
-  color: #ccc;
 }
 a.button figure {
   float: left;
-  margin-right: 9px;
+  margin-right: 10px;
   width: 18px;
   height: 18px;
   background-size: 18px;
