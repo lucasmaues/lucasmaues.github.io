@@ -89,7 +89,7 @@ MEDIA QUERIES
   }
   a.box-post { width: 17.2%; }
   a.box-pro { width: 17.2%; }
-  .active-page-title { font-size: 86px; font-family: 'Roboto-Light'; }
+  .active-page-title { font-size: 86px; }
   .content-box-home { padding: 60px; }
 }
 
@@ -138,7 +138,7 @@ MEDIA QUERIES
     width: 132px; 
   }
   .content-box-home { padding: 40px; }
-  .active-page-title { font-size: 56px; font-family: 'Roboto-Regular'; }
+  .active-page-title { font-size: 56px; }
 }
 
 @media all and (max-width: 900px) {
@@ -174,7 +174,7 @@ MEDIA QUERIES
     display: none; 
   }
   .content-box-home { padding: 15px 0; }
-  .active-page-title { font-size: 36px; font-family: 'Roboto-Light'; }
+  .active-page-title { font-size: 36px; }
 
   /* 
   NAV
@@ -472,6 +472,7 @@ h2 span {
   padding: 10px 14%;
   color: #ccc;
   text-transform: uppercase;
+  font-family: 'Roboto-Regular';
 }
 .page-description {
   font-size: 16px;
@@ -726,4 +727,149 @@ a.button-2:hover, a.button-2:focus {
   color: #555;
   background-color: #fff;
   border: 1px solid #666;
+}
+
+
+#form-div {
+  position: relative;
+  float: none;
+  width: 500px;
+  height: auto;
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+.feedback-input {
+  color: #3c3c3c;
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #eee;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 20px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0);
+}
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 2px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+  border-radius: 50px;
+}
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 70%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #3498db;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+  background-color: #fff;
+  color: #999;
+}
+  
+.submit:hover {
+  color: #3498db;
+}
+  
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: red;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
