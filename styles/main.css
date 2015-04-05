@@ -160,10 +160,10 @@
   }
   section p {
   font-size: 18px;
-  padding: 10px 12%;
+  padding: 10px 8%;
   }
   a.box {
-    background-size: 40px;
+    background-size: 38px;
     background-position: 50% 38%;
     height: 86px;
     width: 86px;
@@ -257,12 +257,30 @@
   }
 }
 @media all and (max-width: 580px) {
-
-  a.box-post { width: 97.4%; }
-
-  header h1 a { font-size: 24px; padding: 15px 10px 12px 0px; }
-  header h1 a span { font-size: 24px; padding: 15px 0px 12px 20px; }
-
+  
+  body {
+    margin: 50px 0 0 0;
+  }
+  header {
+    height: 50px;
+  }
+  header h1 a {
+    font-size: 24px;
+    padding: 10px 20px 7px 0px;
+  }
+  header h1 a span { 
+    font-size: 24px; 
+    padding: 10px 0px 7px 20px; 
+  }
+  .control-nav {
+  top: 16px;
+  }
+  section p {
+    font-size: 16px;
+  }
+  a.box-post { 
+    width: 97.4%; 
+  }
 }
 @media print {
     nav {
