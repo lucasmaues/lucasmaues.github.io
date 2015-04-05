@@ -28,30 +28,14 @@
             }
             h3 {
                 margin: 30px auto;
-                width: 280px;
+                max-width: 280px;
                 color: #999;
                 font-size: 16px;
                 text-align: center;
             }
-            .container-2 {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                margin-left: -240px;
-                display: table;
+            section {
+                margin-top: 50px;
             }
-            .content {
-                text-align: center;
-                vertical-align: middle;
-                display: table-cell;
-                padding-left: 240px;
-            }
-
-            @media only screen and (max-width: 900px) {
-                .container-2 { margin: -60px 0 0 0 !important; }
-                .content { padding: 0 !important; }
-            }
-
         </style>
     </head>
     <body>
@@ -72,18 +56,17 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <a href="license.html" id="copyright">LICENSE</a>
             </nav>
 
         </header>
 
-        <div class="container-2">    
-            <div class="content">
+            <section class="bg-gray">
                 <h2>Error</h2>
                 <h1>404</h1>
                 <h2>Page Not Found</h2>
-                <h3>Sorry, but the requested URL not found on this server, or does not exist, or is no longer available.</h3>
-            </div>
-        </div>
+                <h3>Sorry, but the page you’re requested can’t be found (because does not exist or is no longer available).</h3>
+            </section>
 
     </body>
 </html>
