@@ -180,6 +180,14 @@ button {
 
 /* Titles */
 
+p {
+  color: #444;
+}
+
+h3 {
+  color: #444;
+}
+
 h4 {
   font-size: 18px;
   font-family: 'Roboto-Light';
@@ -298,7 +306,7 @@ article blockquote {
 .img-contact { background-image: url("../images/backgrounds/contact.jpg"); }
 .img-about { background-image: url("../images/backgrounds/traveler.jpg"); }
 .img-legal { background-image: url("../images/backgrounds/book.jpg"); }
-.img-thanks { background-image: url("../images/backgrounds/firework.jpg"); }
+.img-thanks { background-image: url("../images/backgrounds/city.jpg"); }
 .img-error { background-image: url("../images/backgrounds/graffiti.jpg"); }
 
 .page {
@@ -458,15 +466,10 @@ article blockquote {
     background-color: #666;
 }
 
-.white h3 {
-  color: #fff;
-}
-
 /* Chapter */
 
 .chapter h3 {
   font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
-  color: #444;
   line-height: 1.4em;
   text-align: center;
   max-width: 740px;
@@ -478,7 +481,6 @@ article blockquote {
   font: 300 20px/1.2em 'Roboto-Light', Arial, sans-serif;
   line-height: 1.8;
   letter-spacing: 0.18px;
-  color: #444;
   text-align: center;
   max-width: 740px;
   margin: 0 auto;
@@ -494,8 +496,11 @@ article blockquote {
   clear: both;
   display: block;
   border: none;
-  border-top: 3px solid #ddd;
+  border-top: 3px solid rgba(130, 130, 130, 0.26);
   margin: 0 auto 1.2em;
+}
+.white h3, .white p {
+  color: #fff;
 }
 
 /* Home */

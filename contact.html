@@ -8,7 +8,7 @@
 
 	<title>Contact – Lucas Mauess</title>
 	<meta name="description" content="Contact Lucas Mauess via social networks, send a message to email or call to phone number.">
-	<meta name="keywords" content="lucas mauess, lucas maues, contact, email adress, profiles, social networks, phone number">
+	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués, contact, email adress, profiles, social networks, phone number">
 	<meta name="author" content="Lucas Mauess">
 
 	<link rel="stylesheet" href="styles/main.css" type="text/css"/>
@@ -48,7 +48,7 @@
         <div class="full-screen-container page">
 
 	    	<h2>Contact</h2>
-	    	<p>Interested in some services? Have questions? Let’s talk! We can build something great together!</p>
+	    	<p>Let’s talk! We can build something great together!</p>
 	    	
 	    	<div class="page-bar">
 
@@ -78,14 +78,15 @@
 		<section id="message" class="chapter">
 		
 			<h3>Send a Message</h3>
+			<hr>
 			<p>Directly to me. I'll answer to you as soon as possible.</p>
 
 			<!-- Formspree -->
 		    <form role="form" action="//formspree.io/lucasmauess@gmail.com" method="POST">
 		        <input type="text" name="name" placeholder="Name" required/>
 		        <input type="email" name="_replyto" placeholder="Email" required/>
-		        <!-- <input type="tel" placeholder="Phone" pattern="[0-9]+$" title="Only numbers"/> -->
-		        <!-- <input type="url" placeholder="Website"/> -->
+		        <input type="tel" placeholder="Phone" pattern="[0-9]+$" title="Only numbers"/>
+		        <input type="url" placeholder="Website"/>
 		        <!-- <input type="hidden" name="_subject" value="Contact [lucasmauess.github.io]"/> -->
 		        <input type="text" name="_subject" id="subject" placeholder="Subject" required/>
 		        <textarea name="text" placeholder="Message" required></textarea>
@@ -98,7 +99,8 @@
 
 	<section id="profiles" class="white chapter bg-gradient">
 
-		<h3>My profiles in Social Networks</h3>
+		<h3>Social Networks</h3>
+		<hr>
     	<p>The best way to stay connected and share any content with me.</p>
 
 		<div class="container-box">
@@ -232,6 +234,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60745752-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </body>
 
 </html>
