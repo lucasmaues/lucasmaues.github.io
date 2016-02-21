@@ -11,18 +11,20 @@
 	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués, contact, email adress, profiles, social networks, phone number">
 	<meta name="author" content="Lucas Mauess">
 
-	<link rel="stylesheet" href="styles/main.css" type="text/css"/>
+  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+  	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
 	<link rel="shortcut icon" href="images/favicon.png">
+
+	<script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 
-    <header role="banner">
+    <header role="banner" id="header">
 
         <a href="index.html">
-            <figure></figure>
-            <h1>Lucas <span>Mauess</span></h1>
+            <h1>Lucas Mauess</h1>
         </a>
 
         <button id="menu-button"></button>
@@ -48,7 +50,7 @@
         <div class="full-screen-container page">
 
 	    	<h2>Contact</h2>
-	    	<p>Let’s talk! We can build something great together!</p>
+	    	<p>Let’s talk!</p>
 	    	
 	    	<div class="page-bar">
 
@@ -78,7 +80,6 @@
 		<section id="message" class="chapter">
 		
 			<h3>Send a Message</h3>
-			<hr>
 			<p>Directly to me. I'll answer to you as soon as possible.</p>
 
 			<!-- Formspree -->
@@ -97,10 +98,9 @@
 
     	</section>
 
-	<section id="profiles" class="white chapter bg-gradient">
+	<section id="profiles" class="chapter">
 
 		<h3>Social Networks</h3>
-		<hr>
     	<p>The best way to stay connected and share any content with me.</p>
 
 		<div class="container-box">
@@ -123,7 +123,7 @@
 			<a href="http://instagram.com/lucasmauess" class="box instagram" target="_blank">
 				<span>Instagram</span>
 			</a>
-			<a href="http://snapchat.com/" class="box snapchat" target="_blank">
+			<a href="https://www.snapchat.com/add/lucasmauess" class="box snapchat" target="_blank">
 				<span>Snapchat</span>
 			</a>
 			<a href="http://youtube.com/lucasmauess" class="box youtube" target="_blank">
@@ -218,7 +218,6 @@
 		<section id="call" class="chapter">
 
 	    	<h3>Call Me</h3>
-	    	<hr>
 	    	<p>If you prefer to make a call, here's my phone number:</p>
 
 	    	<a href="tel:+55(91)980736060" class="button">+55 (91) 980 736 060</a>
@@ -234,6 +233,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
 
 <!-- Google Analytics -->
 <script>

@@ -11,18 +11,20 @@
 	<meta name="keywords" content="lucas mauess, lucas maues, services, web development, web design, branding">
     <meta name="author" content="Lucas Mauess">
 
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
     <link rel="shortcut icon" href="images/favicon.png">
+
+    <script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 
-    <header role="banner">
+    <header role="banner" id="header">
 
         <a href="index.html">
-            <figure></figure>
-            <h1>Lucas <span>Mauess</span></h1>
+            <h1>Lucas Mauess</h1>
         </a>
 
         <button id="menu-button"></button>
@@ -48,7 +50,7 @@
         <div class="full-screen-container page">
 
     	    <h2>Services</h2>
-    	    <p>I can help you have a modern website or webapp, an striking UI/UX design project, best SEO results and a unforgettable presentation.</p>
+    	    <p>How I can help You?</p>
 
     	    <div class="page-bar">
 
@@ -59,27 +61,27 @@
 
     	    	<a href="#web-development" title="">
                     <figure class="icon-code"></figure>
-                    <span>Web Development</span>
+                    <span>Web<br> Development</span>
                 </a>
 
-                <a href="#ux-ui-design" title="">
-                    <figure class="icon-colors"></figure>
-                    <span>UX/UI<br> Design</span>
-                </a>
-
-    	    	<a href="#seo" title="">
+                <a href="#seo" title="">
                     <figure class="icon-seo"></figure>
                     <span>SEO</span>
                 </a>
 
+                <a href="#ux-ui-design" title="">
+                    <figure class="icon-colors"></figure>
+                    <span>UX and UI<br> Design</span>
+                </a>
+
                 <a href="#presentations" title="">
                     <figure class="icon-presentation"></figure>
-                    <span>Presentations Design</span>
+                    <span>Presentations</span>
                 </a>
 
                 <a href="#technical" title="">
                     <figure class="icon-support"></figure>
-                    <span>Technical Assistance</span>
+                    <span>Technical<br> Assistance</span>
                 </a>
 
     	    </div>
@@ -88,121 +90,75 @@
 
 	</section>
 
-    <section class="chapter uppercase" id="web-design">
-      
-        <h3>Web Design</h3>
+    <section class="chapter" id="web-design">
 
-        <hr>
-   
-        <p>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</p>
+        <div class="chapter-div">
+            <h3>Web Design</h3>
+            <hr>
+            <p>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</p>
+            <p>With the responsive design: a single code that adapts to various screen sizes of the devices (desktops, smartphones, tablets...) for the best user experience.</p>
+            <a href="#" class="button">See Examples</a>
+        </div>
+
+        <div class="chapter-div">
+            <figure class="box-serv icon-layout"></figure>
+        </div>
     
-        <!-- <img src="images/web-design.png" alt="web design"> -->
-
-        <p>With the responsive design: a single code that adapts to various screen sizes of the devices (desktops, smartphones, tablets...) for the best user experience.</p>
-        
-        <a href="#" class="button">See an Example</a>
-        
     </section>
 
-    <section class="chapter uppercase" id="web-development">
-      
+    <section class="chapter" id="web-development">
+
+        <figure class="box-serv icon-code"></figure>
         <h3>Web Development</h3>
-
         <hr>
-
         <p>With HTML, CSS, JavaScript, SVG and PHP as my tools, I build website front-ends and back-ends focusing on performance, responsiveness and usability.</p>
-
-        <!-- <img src="images/web.png" alt="web development"> -->
-
         <p>And I love work together with design and development teams to turn designs into fast, responsive, interactive and accessible websites and applications.</p>
 
         <a href="#" class="button">Hire Me</a>
     
     </section>
 
-    <section class="chapter uppercase" id="ux-ui-design">
-  
-        <h3>UI / UX Design</h3>
+    <section class="chapter" id="ux-ui-design">
 
+        <figure class="box-serv icon-colors"></figure>
+        <h3>UX and UI Design</h3>
         <hr>
-
 		<p>Both mobile applications, as web applications need a solid user interface and a powerful user experience. Because it makes all the difference.</p>
-
         <p>I can develop the UI and UX projects, understanding the needs and expectations of the user experience and design simple interfaces for complex applications that help users do more with less.</p>
-
 		<a href="#" class="button">View</a>
     
 	</section>
 
-    <section class="chapter uppercase" id="seo">
+    <section class="chapter" id="seo">
 
+        <figure class="box-serv icon-seo"></figure>
         <h3>Search Engine Optimization</h3>
-
         <hr>
-
         <p>SEO - Mobile devices are increasingly utilized to access content and interact with brands. It is critical that you have a solidly executed mobile experience to increase your audience.</p>
-
         <a href="#" class="button">Ask Budget</a>
 
     </section>
 
-    <section class="chapter uppercase" id="presentations">
-      
+    <section class="chapter" id="presentations">
+
+        <figure class="box-serv icon-presentation"></figure>
         <h3>Professional Presentations</h3>
-
         <hr>
-
         <p>The best way to generate interest for something is start with a big first visual impact. And I can help you to have a modern and dynamic digital presentation, to generate more views and exposure for your project or business.</p>
-
-        <p>Notable presentations that make people remember. Wich can be used both for talks and conferences, as to share online if you wish to reach a wider audience.</p>
-
-        <a href="#" class="button">Show Me How</a>
+        <p>Notable presentations that make people remembered. And wich can be used both for talks and conferences, as to share online if you wish to reach a wider audience.</p>
+        <a href="#" class="button">Show Me</a>
     
     </section>
 
-	<section class="chapter uppercase" id="technical">
-  
+	<section class="chapter" id="technical">
+
+        <figure class="box-serv icon-support"></figure>
         <h3>Technical Assistance</h3>
-
         <hr>
-   
         <p>I can fix the problems of your computer. Restore lost files, install and configure softwares, repair and optimize the system, remove viruses, maintaining network and more. You need a remote support?</p>
-
 		<a href="contact.html" class="button">I Need Help</a>
     
 	</section>
-
-    <section>
-        <a href="#" class="box-serv">
-            <figure class="icon-layout"></figure>
-            <h2>Web Design</h2>
-            <span>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</span>
-        </a>
-
-        <a href="#" class="box-serv">
-            <figure class="icon-code"></figure>
-            <h2>Web Development</h2>
-            <span>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</span>
-        </a>
-
-        <a href="#" class="box-serv">
-            <figure class="icon-seo"></figure>
-            <h2>SEO</h2>
-            <span>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</span>
-        </a>
-
-        <a href="#" class="box-serv">
-            <figure class="icon-colors"></figure>
-            <h2>UX/UI Design</h2>
-            <span>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</span>
-        </a>
-
-        <a href="#" class="box-serv">
-            <figure class="icon-presentation"></figure>
-            <h2>Presentations</h2>
-            <span>I can develop a compatible, accessible, optimized and mobile-friendly website. Personalized for all your needs. With easy maintenance and full support.</span>
-        </a>
-    </section>
 
     <footer>
         <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
@@ -211,6 +167,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
 
 <!-- Google Analytics -->
 <script>

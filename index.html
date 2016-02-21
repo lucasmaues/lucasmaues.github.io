@@ -6,20 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<title>Lucas Mauess</title>
-  	<meta name="description" content="Personal page of Lucas Mauess - Web Developer, UX/UI Designer, Computer Science student and Open SOurce advocate.">
+  	<meta name="description" content="Personal page of Lucas Mauess - Web Developer, UX/UI Designer, Computer Science student and Open Source advocate.">
   	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués">
   	<meta name="author" content="Lucas Mauess">
 
-  	<!-- Styles -->
-  	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+  	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-  	<!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png"/>
 
     <!-- Chrome - Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/chrome-touch-icon.png">
-    <meta name="theme-color" content="#666666">
+    <meta name="theme-color" content="#333">
 
     <!-- Safari - iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,7 +39,7 @@
 
     <!-- IE / Edge - Windows -->
     <meta name="application-name" content="Lucas Mauess">
-	<meta name="msapplication-TileColor" content="#FFFFFF"/>
+	<meta name="msapplication-TileColor" content="#25AFCC"/>
 	<meta name="msapplication-TileImage" content="images/ms-touch-icon.png"/>
 	<meta name="msapplication-square70x70logo" content="icon_smalltile.png">
 	<meta name="msapplication-square150x150logo" content="icon_mediumtile.png">
@@ -69,23 +68,24 @@
 	<meta name="twitter:title" content="Lucas Mauess">
 	<meta name="twitter:description" content="A freelancer Web Developer and Designer, founder of INBLUG, student of Computer Science and advocate of Open Source.">
 	<meta property="twitter:image:src" content="images/lucas_mauess.png">
+
+	<script src="scripts/headroom.js" type="text/javascript"></script>
 </head>
 
 <body>
 
-    <header role="banner">
+    <header role="banner" id="header">
 
-    	<button id="menu-button"></button>
+    	<button id="menu-button" onclick="openMenu();"></button>
 
         <a href="index.html">
-        	<figure></figure>
-        	<h1>Lucas <span>Mauess</span></h1>
+        	<h1>Lucas Mauess</h1>
         </a>
 
-		<div class="layer-menu"></div>
+		<div class="layer-menu" onclick="closeMenu();"></div>
 
 		<nav role="navigation">
-			<button id="close-button"></button>
+			<button id="close-button" onclick="closeMenu();"></button>
 			<ul>
 			    <li><a href="index.html" class="hide active">Home</a></li>
  	            <li><a href="blog.html">Blog</a></li>
@@ -104,58 +104,61 @@
 		<div class="full-screen-container page">
 
 			<div class="home">
+				<h2>Lucas Mauess</h2>
+				<span>Front-End Web Developer</span>
+    			<p>Hi! My name is Lucas. I'm a Brazilian independent front-end web developer. I work delivering awesome web sites, applications and design projects. Feel fre to discover!</p>
 
-				<h2>LUCAS MAUESS</h2>
-				<span>Web Developer & Designer</span>
-
-    			<p>Hi, I'm Lucas. I am a independent Web Developer and UX/UI Designer from Brazil. I work with development of responsives websites and webapps.</p>
-
-    			<p>Here I share my experiences. Feel free to explore my projects, meet my work, read my blog and contact to work together or hire my services.</p>
-
-    			<a href="#content" class="button">Explore</a>
-
+    			<a href="#content" class="down"></a>
 			</div>
 
 		</div>
 
 	</section>
 
-	<main role="main">
 
+<main role="main">
 
-	<section id="content">
+	<section class="chapter" id="content">
 		
-		<div class="box-home img-blog">
+		<div class="tile">
+			<figure class="img-blog"></figure>
 			<a href="blog.html">
 				<h4>Blog</h4>
-				<span>Sharing ideas about web and mobile development, UX and UI design, trends and my experiences.</span>
+				<span>A place to share ideas about web and mobile development, design, trends and exchange experiences.</span>
 			</a>
 		</div>
-		<div class="box-home img-projects">
+
+		<div class="tile">
+			<figure class="img-projects"></figure>
 			<a href="projects.html">
 				<h4>Projects</h4>
-				<span>My projects of websites, webapps and open source projects.</span>
+				<span>Meet my projects of web sites and applications. Contribute with open source projects.</span>
 			</a>
 		</div>
-		<div class="box-home img-services">
+
+		<div class="tile">
+			<figure class="img-services"></figure>
 			<a href="services.html">
 				<h4>Services</h4>
-				<span>Web Design - Web Development  - UX/UI Design  - SEO - Presentations - Technical Assistance</span>
+				<span>I can help you have a modern web site or application, an striking UX/UI design project, best SEO results and unforgettable presentations.</span>
 			</a>
 		</div>
-		<div class="box-home img-work">
+		<div class="tile">
+			<figure class="img-work"></figure>
 			<a href="work.html">
 				<h4>Work</h4>
 				<span>View my work, case studies and creative process.</span>
 			</a>
 		</div>
-		<div class="box-home img-contact">
+		<div class="tile">
+			<figure class="img-contact"></figure>
 			<a href="contact.html">
 				<h4>Contact</h4>
-				<span>Questions? Let’s talk! We can build something great together!</span>
+				<span>You have a proposal for a project or partnership? Questions? Let's talk! We can build something great together!</span>
 			</a>
 		</div>
-		<div class="box-home img-about">
+		<div class="tile">
+			<figure class="img-about"></figure>
 			<a href="about.html">
 				<h4>About</h4>
 				<span>A summary about me, my professional skills and experiences.</span>
@@ -164,83 +167,72 @@
 
 	</section>
 
+	<section class="page-bg img-services chapter">
 
-    <section class="page-bg img-services chapter">
+		<div class="page">
 
-    	<div class="page">
+	    	<img src="images/devices_.png" width="548px" alt="desktop, laptop, smartphone and tablet">
 
-		<h3>Looking for someone to turn your ideas in usable websites or webapps that respond to various devices and user contexts?</h3>
+			<h3>Looking for someone to turn your ideas in usable web sites or applications that respond to various devices and user contexts?</h3>
 
-		<img src="images/devices.png" width="548px" alt="desktop, laptop, smartphone and tablet">
+			<p>Let's build something awesome today!</p>
 
-		<p>I can develop a responsive, interactive and accessible website or webapp, with a powerful ux/ui design project and a scalable code.</p>
+			<p>I can develop a responsive, interactive and accessible web site or application, with a powerful design project and a scalable code.</p>
 
-    	<a href="services.html" class="button">Hire Me</a>
+	    	<a href="services.html" class="button">Hire Me</a>
 
     	</div>
 
-    </section>
+   	</section>
 
+    <!-- <section class="chapter">
 
-    <section class="min-padding grayscale">
+    	<h3>Featured on Blog</h3>
 
-<!-- 		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/cup.jpg');"></figure>
-			<a href="blog.html"  class="tile-bg">
-				<span>Blog</span>
-				<h4>Blog</h4>
-			</a>
-		</div>
+    		<div class="post-home post-home-mega">
+				<a href="blog.html">
+					<span>JAVASCRIPT</span>
+					<h4>The best ways to learn JavaScript online</h4>
+				</a>
+			</div>
 
-		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/sky.jpg');"></figure>
-			<a href="projects.html" class="tile-bg">
-				<span>Projects</span>
-				<h4>Projects</h4>
-			</a>
-		</div>
+			<div class="post-home post-home-mega">
+				<a href="blog.html">
+					<span>APIS</span>
+					<h4>How to implement Push API, the W3C standard for web notifications</h4>
+				</a>
+			</div>
 
-		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/computer.jpg');"></figure>
-			<a href="services.html"  class="tile-bg">
-				<span>Services</span>
-				<h4>Services</h4>
-			</a>
-		</div>
+			<div class="post-home">
+				<a href="blog.html">
+					<span>Fonts</span>
+					<h4>The best sites to find and download free Fonts</h4>
+				</a>
+			</div>
+			
+			<div class="post-home">
+				<a href="blog.html">
+					<span>WEB DEVELOPMENT</span>
+					<h4>Progressive Web Apps: the future of web development?</h4>
+				</a>
+			</div>
 
-		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/art.jpg');"></figure>
-			<a href="work.html"  class="tile-bg">
-				<span>Work</span>
-				<h4>Work</h4>
-			</a>
-		</div>
+			<div class="post-home">
+				<a href="blog.html">
+					<span>JAVASCRIPT</span>
+					<h4>The best ways to learn JavaScript online</h4>
+				</a>
+			</div>
 
-		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/contact.jpg');"></figure>
-			<a href="contact.html" class="tile-bg">
-				<span>Contact</span>
-				<h4>Contact</h4>
-			</a>
-		</div>
+        	<a href="blog.html" class="button">More Articles</a> 
 
-		<div class="tile large-tile">
-			<figure style="background-image: url('images/backgrounds/traveler.jpg');"></figure>
-			<a href="about.html" class="tile-bg">
-				<span>About</span>
-				<h4>About</h4>
-			</a>
-		</div> -->
+	</section> -->
 
-	</section>
+	<section class="chapter">
 
-    <section class="page-bg img-social chapter">
+		<h3>Connect and Share!</h3>
 
-    	<div class="page">
-
-    		<h3>Social Networks</h3>
-
-			<div class="container-home">
+			<div class="container-box">
 
 				<a href="https://twitter.com/lucasmauess" class="box twitter" target="_blank">
 					<span>Twitter</span>
@@ -251,19 +243,10 @@
 				<a href="https://google.com/+lucasmauess" class="box googleplus" target="_blank">
 					<span>Google+</span>
 				</a>
-				<a href="https://linkedin.com/in/lucasmauess" class="box linkedin" target="_blank">
-					<span>LinkedIn</span>
-				</a>
-				<a href="skype://lucasmauess" class="box skype">
-					<span>Skype</span>
-				</a>
-				<a href="https://youtube.com/lucasmauess" class="box youtube" target="_blank">
-					<span>YouTube</span>
-				</a>
 				<a href="https://instagram.com/lucasmauess" class="box instagram" target="_blank">
 					<span>Instagram</span>
 				</a>
-				<a href="https://www.snapchat.com/lucasmauess" class="box snapchat" target="_blank">
+				<a href="https://www.snapchat.com/add/lucasmauess" class="box snapchat" target="_blank">
 					<span>Snapchat</span>
 				</a>
 				<a href="https://vine.co/lucasm" class="box vine" target="_blank">
@@ -272,20 +255,11 @@
 				<a href="https://periscope.tv/lucasmauess" class="box periscope" target="_blank">
 					<span>Periscope</span>
 				</a>
-				<a href="https://pinterest.com/lucasmauess" class="box pinterest" target="_blank">
-					<span>Pinterest</span>
-				</a>
-				<a href="https://play.spotify.com/user/lucasmauess" class="box spotify" target="_blank">
-					<span>Spotify</span>
-				</a>
-				<a href="https://soundcloud.com/lucasmauess" class="box soundcloud" target="_blank">
-					<span>SoundCloud</span>
-				</a>
-				<a href="http://twitch.tv/lucasmauess/profile" class="box twitch" target="_blank">
-					<span>Twitch</span>
-				</a>
 				<a href="https://medium.com/@mauess" class="box medium" target="_blank">
 					<span>Medium</span>
+				</a>
+				<a href="https://linkedin.com/in/lucasmauess" class="box linkedin" target="_blank">
+					<span>LinkedIn</span>
 				</a>
 				<a href="http://slideshare.net/lucasmauess" class="box slideshare" target="_blank">
 					<span>SlideShare</span>
@@ -305,13 +279,11 @@
 
 			</div>
 
-			<a href="contact.html" class="button">More</a>
+			<a href="contact.html#profiles" class="button">More</a>
 
 		</div>
 
 	</section>
-
-
 
 </main>
 
@@ -333,6 +305,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
 
 <!-- Google Analytics -->
 <script>

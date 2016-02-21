@@ -11,19 +11,20 @@
 	<meta name="keywords" content="lucas mauess, lucas maues, projects">
 	<meta name="author" content="Lucas Mauess">
 
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+  	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
     <link rel="shortcut icon" href="images/favicon.png">
 
+    <script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 
-    <header role="banner">
+    <header role="banner" id="header">
 
         <a href="index.html">
-            <figure></figure>
-            <h1>Lucas <span>Mauess</span></h1>
+            <h1>Lucas Mauess</h1>
         </a>
 
         <button id="menu-button"></button>
@@ -49,15 +50,13 @@
 	    <div class="full-screen-container page">
 
 	    	<h2>Projects</h2>
-	    	<p>My projects of websites, webapps and open source projects. Feel free to explore and collaborate.</p>
+	    	<p>For a better Web</p>
 
 			<!-- <div class="page-bar">
-
 		    	<a href="#" title="Send your feedback about the projects">
 		    		<figure class="icon-feedback"></figure>
 		    		<span>Feedback</span>
 		    	</a>
-
 		    </div> -->
 
 		    <a href="#down" class="down"></a>
@@ -68,147 +67,174 @@
 
     <section class="chapter" id="down">
 
-	    <h3>WebSites & WebApps</h3>
+	    <h3>Web Sites & Apps</h3>
 
-		<div class="box-pro img-search">
-			<a href="#" class="blue-color">
-				<figure class="isearch-icon"></figure>
-				<h2>Searchy</h2>
-				<span>A web search facilitator. Quickly search in multiple search engines or find content direct at source with search modules. With total privacy.</span>
-			</a>
+		<div class="box-pro">
+
+			<div class="img-search">
+				<a href="#" class="blue-color">
+					<figure class="isearch-icon"></figure>
+					<h2>Searchy</h2>
+				</a>
+			</div>
+
+			<span>A web search facilitator. Quickly search in multiple search engines or find content direct at source with search modules. With total privacy.</span>
 		</div>
 
-		<div class="box-pro img-video">
-			<a href="#" class="red-color">
-				<figure class="video-icon"></figure>
-				<h2>Vydeon</h2> <!-- VideoZy -->
-				<span>Coleção com os melhores canais e fontes de streming gratuitos para assitir pela web.</span>
-			</a>
+		<div class="box-pro">
+
+			<div class="img-video">
+				<a href="#" class="red-color">
+					<figure class="video-icon"></figure>
+					<h2>Vydeon</h2> <!-- VideoZy -->
+				</a>
+			</div>
+			<span>Coleção com os melhores canais e fontes de streming gratuitos para assitir pela web.</span>
 		</div>
 
-		<div class="box-pro img-favoritess">
-			<a href="#" class="yellow-color">
-				<figure class="favoritess-icon"></figure>
-				<h2>Favys</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-favoritess">
+				<a href="#" class="yellow-color">
+					<figure class="favoritess-icon"></figure>
+					<h2>Favys</h2>
+				</a>
+			</div>
+
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		 <div class="box-pro img-feed">
-		 	<a href="#" class="orange-color">
-			 	<figure class="worlfeed"></figure>
-				<h2>Flyeed</h2> <!-- WorlFeed -->
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		 <div class="box-pro">
+			 <div class="img-feed">
+			 	<a href="#" class="orange-color">
+				 	<figure class="worlfeed"></figure>
+					<h2>Flyeed</h2> <!-- WorlFeed -->
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-music">
-			<a href="#" class="pink-color">
-				<figure class="muzyc"></figure>
-				<h2>Muzyc</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-music">
+				<a href="#" class="pink-color">
+					<figure class="muzyc"></figure>
+					<h2>Muzyc</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-education">
-			<a href="#" class="aqua-color">
-				<figure class="edu-icon"></figure>
-				<h2>EduLynk</h2> <!-- INBLUG Edu -->
-				<span>Diretório que reune os melhores cursos onlines gratuitos em um único lugar.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-education">
+				<a href="#" class="aqua-color">
+					<figure class="edu-icon"></figure>
+					<h2>EduLynk</h2> <!-- INBLUG Edu -->
+				</a>
+			</div>
+			<span>Diretório que reune os melhores cursos onlines gratuitos em um único lugar.</span>
 		</div>
 
-		<div class="box-pro img-apps">
-			<a href="#" class="blue-2-color">
-				<figure class="appdow"></figure>
-				<h2>Appy</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-apps">
+				<a href="#" class="blue-2-color">
+					<figure class="appdow"></figure>
+					<h2>Appy</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-game">
-			<a href="#" class="green-color">
-				<figure class="gamezun"></figure>
-				<h2>GameZun</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-game">
+				<a href="#" class="green-color">
+					<figure class="gamezun"></figure>
+					<h2>GameZun</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-local">
-			<a href="#" class="pink-2-color">
-				<figure class="localy"></figure>
-				<h2>Localy</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-local">
+				<a href="#" class="pink-2-color">
+					<figure class="localy"></figure>
+					<h2>Localy</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-design">
-			<a href="#" class="purple-color">
-				<figure class="design-icon"></figure>
-				<h2>Desygn</h2>
-				<span>Redesign of popular websites and applications. It's time to view everything in a new perspective.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-design">
+				<a href="#" class="purple-color">
+					<figure class="design-icon"></figure>
+					<h2>Desygn</h2>
+				</a>
+			</div>
+			<span>Redesign of popular websites and applications. It's time to view everything in a new perspective.</span>
 		</div>
 
-		<div class="box-pro img-camera">
-			<a href="#" class="purple-color">
-				<figure class="camram"></figure>
-				<h2>CamRAM</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-camera">
+				<a href="#" class="purple-color">
+					<figure class="camram"></figure>
+					<h2>CamRAM</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
-		<div class="box-pro img-science">
-			<a href="#" class="green-2-color">
-				<figure class="icon-science"></figure>
-				<h2>Scyence</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</a>
+		<div class="box-pro">
+			<div class="img-science">
+				<a href="#" class="green-2-color">
+					<figure class="icon-science"></figure>
+					<h2>Scyence</h2>
+				</a>
+			</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
 		</div>
 
     </section>
 
-<!--     <section class="chapter">
+ 	<section class="chapter">
 
-    	<h3>Startup</h3>
+    	<h3>Studio</h3>
 
-        <div class="box-pro img-inblug">
-    		<a href="#">
-    			<figure class="inblug"></figure>
-				<h2>INBLUG</h2>
-				<span>A startup specializing in design and develop high-end interactive projects of websites and mobile apps.</span>
-			</a>
+    	<div class="box-pro">
+			<div class="img-inblug">
+				<a href="#">
+					<figure class="inblug"></figure>
+					<h2>INBLUG</h2>
+				</a>
+			</div>
+			<span>A startup specializing in design and develop high-end interactive projects of websites and mobile apps.</span>
 		</div>
 
-    </section> -->
+    </section>
 
     <section class="chapter">
 
     	<h3>Open Source</h3>
 
-    	<a href="#" class="box-pro">
-			<div>
-				<figure class=""></figure>
+    	<div class="box-pro">
+			<a href="#">
 				<h2>INBLUG Boilerplate</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</div>
-		</a>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
+			</a>
+		</div>
 
-    	<a href="#" class="box-pro">
-			<div>
-				<figure class=""></figure>
+    	<div class="box-pro">
+			<a href="#">
 				<h2>Web Speech API</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</div>
-		</a>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
+			</a>
+		</div>
 
-		<a href="#" class="box-pro">
-			<div>
-				<figure class=""></figure>
+		<div class="box-pro">
+			<a href="#">
 				<h2>Web Notifications API</h2>
-				<span>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam.</span>
-			</div>
-		</a>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</span>
+			</a>
+		</div>
 
     </section>
 
@@ -219,6 +245,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
 
 <!-- Google Analytics -->
 <script>

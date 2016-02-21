@@ -1,3 +1,14 @@
+// open close menu (hidden scroll page)
+
+function openMenu() {
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+  document.body.style.overflow = '';
+}
+
+// menu
+
 (function() {
 
 	var bodyEl = document.body,

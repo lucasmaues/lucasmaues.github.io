@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
@@ -11,26 +10,28 @@
 	<meta name="keywords" content="lucas, mauess, maues, blog, web, design, mobile, development, programming">
     <meta name="author" content="Lucas Mauess">
 
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
+  	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
     <link rel="shortcut icon" href="images/favicon.png">
+
+    <script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 
 
-    <header role="banner">
+    <header role="banner" id="header">
 
         <a href="index.html">
-        	<figure></figure>
-        	<h1>Lucas <span>Mauess</span></h1>
+        	<h1>Lucas Mauess</h1>
         </a>
 
-		<button id="menu-button"></button>
-		<div class="layer-menu"></div>
+		<button id="menu-button" onclick="openMenu();"></button>
+		<div class="layer-menu" onclick="closeMenu();"></div>
 
 		<nav role="navigation">
-			<button id="close-button"></button>
+			<button id="close-button" onclick="closeMenu();"></button>
 			<ul>
 			    <li><a href="index.html" accesskey="h" class="hide">Home</a></li>
  	            <li><a href="blog.html" accesskey="b" class="active">Blog</a></li>
@@ -44,14 +45,13 @@
         
     </header>
 
-
     <section class="full-screen page-bg img-blog">
 
 	    <div class="full-screen-container page">
 
 	    	<h2>Blog</h2>
 	    	
-	    	<p>Sharing ideas about Web and Mobile Development, UX and UI Design, trends and my experiences.</p>
+	    	<p>Sharing ideas</p>
 
 	    	<div class="page-bar">
 
@@ -190,6 +190,7 @@
     </footer>
 
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
 
 <!-- Google Analytics -->
 <script>
