@@ -591,10 +591,10 @@ article blockquote {
 /* Chapter */
 
 .chapter h3 {
-  font: 700 36px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   line-height: 1.4em;
   text-align: center;
-  max-width: 780px;
+  max-width: 740px;
   margin: 0 auto;
   padding: 20px;
   text-rendering: optimizeLegibility;
@@ -667,25 +667,25 @@ article blockquote {
 .home h2 {
   margin: 0 auto;
   text-align: center;
-  font: 700 84px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 68px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   color: #fff;
   padding: 30px 0 0;
   text-transform: none;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
   line-height: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .home span {
   margin: 0 auto;
   position: relative;
   display: block;
   text-align: center;
-  font: 700 24px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   color: #fff;
   padding: 12px 0 40px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .home p {
   margin: 0 auto;
@@ -905,17 +905,17 @@ article blockquote {
   background-attachment: scroll;
   background-repeat: no-repeat;
   width: 100%;
-  height: 320px;
+  height: 280px;
   overflow: hidden;
 }
 .box-pro div a {
   float: left;
-  padding: 60px 0 0 0;
+  padding: 40px 0 0 0;
   margin: 0;
   width: 100%;
-  height: 260px;
+  height: 240px;
   color: transparent;
-  background-color: rgba(44, 44, 44, 0.8);
+  background-color: rgba(54, 54, 54, 0.88);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -926,26 +926,69 @@ article blockquote {
   /* background-color: rgba(64, 64, 64, 0.88); */
   color: #fff;
 }
-.box-pro div h2 {
+.box-pro h2 {
   padding: 0;
   font: 500 32px 'Roboto-Medium', Arial, sans-serif;
   color: #fff;
 }
-.box-pro div figure {
+.box-pro figure {
   margin: 0;
   width: 100%;
-  height: 140px;
+  height: 132px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 84px;
+  background-size: 80px;
   background-color: transparent;
 }
-
+.box-pro p {
+  float: left;
+  text-align: left;
+  padding: 16px 0;
+  font: 300 16px 'Roboto-Light', Arial, sans-serif;
+  line-height: 1.8em;
+}
 .box-pro span {
   float: left;
   text-align: left;
-  padding: 28px 0;
-  font: 300 18px 'Roboto-Light', Arial, sans-serif;
+  padding: 30px 0 0 0;
+  font: 400 16px 'Roboto-Regular', Arial, sans-serif;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.pro-simple {
+  position: relative;
+  float: left;
+  padding: 48px;
+  margin: 12px;
+  width: 320px;
+  height: 160px;
+  color: transparent;
+  background-color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.pro-simple:hover, .pro-simple:focus {
+  background-color: #eee;
+  color: #fff;
+}
+.pro-simple h2 {
+  float: left;
+  padding: 0;
+  margin: 0;
+  font: 500 32px 'Roboto-Medium', Arial, sans-serif;
+  color: #444;
+}
+.pro-simple p {
+  float: left;
+  text-align: left;
+  padding: 16px 0;
+  font: 300 16px 'Roboto-Light', Arial, sans-serif;
   line-height: 1.8em;
 }
 
