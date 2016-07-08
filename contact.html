@@ -65,15 +65,20 @@
 		    		<span>+55 (91) <br>984 968 007</span>
 		    	</a>
 
-	    		<a href="#message">
-		    		<figure class="icon-message"></figure>
-		    		<span>Send a<br> Message</span>
+	    		<a href="https://www.google.com/maps/place/Bel%C3%A9m,+PA,+Brasil/@-1.3017851,-48.5944739,11z/" target="_blank">
+		    		<figure class="icon-local"></figure>
+		    		<span>Belém - PA<br> Brazil</span>
 		    	</a>
 
-		    	<a href="#social">
+		<!-- 	<a href="#message">
+	    			<figure class="icon-email"></figure>
+	    			<span>Send a<br> Message</span>
+	    		</a>
+
+				<a href="#social">
 	    			<figure class="icon-profile"></figure>
 	    			<span>Social<br> Media</span>
-	    		</a>
+	    		</a> -->
 
 		    </div>
 
@@ -86,17 +91,17 @@
 
 	<section id="message">
 	
-			<h3>Let's Talk!</h3>
-			<p>Take a sec to let me know a bit about your idea, project or proposal. We can build something awesome together!</p>
+			<h2>Let's Talk!</h2>
+			<p>Take a sec to let me know a bit about your idea, project or proposal. We can build something awesome together.</p>
 
 			<!-- Formspree -->
 		    <form role="form" action="//formspree.io/lucasmauess@gmail.com" method="POST">
 		        <input type="text" name="name" placeholder="Name *" required/>
 		        <input type="email" name="_replyto" placeholder="Email *" required/>
-		        <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]+$" title="Only numbers"/>
-		        <input type="url" name="website" placeholder="Website"/>
-		        <input type="hidden" name="_subject" value="Contact [lucasmauess.com]"/>
-		        <!-- <input type="text" name="subject" id="subject" placeholder="Subject *" required/> -->
+		        <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]+$" title="Only numbers" class="hide" />
+		        <input type="url" name="website" placeholder="Website" class="hide" />
+		        <!-- <input type="hidden" name="_subject" value="Contact [lucasmauess.com]"/> -->
+		        <input type="text" name="subject" id="subject" placeholder="Subject *" required/>
 		        <textarea name="text" placeholder="Message *" required></textarea>
 		        <input type="submit" value="Send"/>
 		        <input type="hidden" name="_next" value="thanks.html" />
