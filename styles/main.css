@@ -288,7 +288,7 @@ footer {
   height: auto;
   background-color: #eee;
   text-align: center;
-  color: #888;
+  color: #777;
 }
 footer a:hover, footer a:focus {
   color: #333;
@@ -296,9 +296,8 @@ footer a:hover, footer a:focus {
 footer a, footer p, footer li { 
   display: inline-block;
   margin: 4px;
-  font: 300 14px 'Roboto-Light', Arial, sans-serif;
-  color: #888;
-  text-transform: uppercase;
+  font: 300 16px 'Roboto-Light', Arial, sans-serif;
+  color: #777;
   letter-spacing: none;
   line-height: 1.4em;
 }
@@ -337,7 +336,7 @@ b, strong {
   font-family: 'Roboto-Medium', Arial, sans-serif;
 }
 h1 {
-  font: 700 76px 'Nova-Bold', 'Roboto-Bold', Arial, sans-serif;
+  font: 700 84px 'Nova-Bold', 'Roboto-Bold', Arial, sans-serif;
   padding: 0 20px;
 }
 h2 {
@@ -377,12 +376,12 @@ li {
   text-align: left;
 }
 hr {
-  width: 6rem;
+  width: 4rem;
   clear: both;
   display: block;
   border: none;
   border-top: 3px solid #333;
-  margin: 1rem auto 2rem;
+  margin: 0.8rem auto 1.6rem;
 }
 
 /* Image */
@@ -790,9 +789,9 @@ article blockquote {
 /* Left & Right */
 
 .left, .right {
-  max-width: 740px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .left p, .left h2, .left h3, .left h4 { 
@@ -837,7 +836,7 @@ article blockquote {
   color: #fff;
   padding: 32px 0 0;
   text-transform: none;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -1051,7 +1050,6 @@ article blockquote {
 .tile {
   z-index: 0;
   position: relative;
-  display: block;
   float: left;
   margin: 1%;
   padding: 0;
@@ -1107,19 +1105,33 @@ article blockquote {
 .tile a:hover, .tile a:focus {
   background: rgba(40, 40, 40, 1);
 }
-.tile a:hover h4, .tile a:focus h4 {
+.tile a:hover h4, .tile a:focus h4,
+.tile a:hover p, .tile a:focus p {
   color: #fff;
+  transition: all 0.25s ease-in-out;
 }
 .tile h4 {
-  position: absolute;
+/* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0;*/
+  float: left;
   text-align: left;
-  padding: 38px 38px;
+  padding: 18px 10%;
   font: 28px 700 'Nova-Bold', Arial, sans-serif;
   color: transparent;
   max-width: 480px;
+  width: 80%;
   letter-spacing: normal;
+  transition: all 0.25s ease-in-out;
+}
+.tile p {
+  float: left;
+  text-align: left;
+  color: transparent;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 32px 10% 0;
+  width: 80%;
   transition: all 0.25s ease-in-out;
 }
 .tile span {
@@ -1696,7 +1708,7 @@ input[type="submit"]:active {
     padding: 32px 4%;
   }
   footer a, footer p, footer li {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .hide {
