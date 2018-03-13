@@ -23,7 +23,9 @@ header {
   box-sizing: border-box;
   z-index: 999;
 }
-header.scroll {}
+header.scroll {
+
+}
 
 /* animations for headroom.js */
 .slide {
@@ -82,7 +84,6 @@ nav ul {
   box-sizing: border-box;
 }
 nav ul li {
-  display: inline-block;
   float: left;
   width: 50%;
 }
@@ -222,8 +223,8 @@ p, h1, h2, h3, h4, h5, h6, li {
 }
 p, li {
   font-weight: 400;
-  font-size: 1.35rem;
-  line-height: 1.65;
+  font-size: 1.3rem;
+  line-height: 1.6;
   margin: 0 auto;
 }
 b, strong {
@@ -234,13 +235,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 7.4rem;
 }
-h2 {
-  font-size: 5rem;
+h2, article h1 {
+  font-size: 4.2rem;
 }
-h3 {
-  font-size: 2.5rem;
+h3, article h2 {
+  font-size: 2.2rem;
 }
 h4 {
   font-size: 2rem;
@@ -266,23 +267,18 @@ img {
 
 article {
   position: relative;
-  max-width: 780px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 10rem 2rem 4rem;
 }
 article p {
-  text-align: left;
   padding: 0 0 1.5rem 0;
   max-width: 100%;
 }
 article h1 {
-  font-size: 4.5rem;
-  text-align: left;
   padding: 2rem 0;
 }
 article h2 {
-  font-size: 2.5rem;
-  text-align: left;
   padding: 3rem 0 2rem;
 }
 article ol {
@@ -329,6 +325,7 @@ footer {
   box-sizing: border-box;
 }
 footer p {
+  float: right;
   font-size: 1.15rem;
   padding: 0;
 }
@@ -377,7 +374,6 @@ footer p {
   margin-left: 0;
 }
 .left hr {
-  align: left;
   margin-left: 0;
 }
 .left .button {
@@ -388,16 +384,16 @@ footer p {
 /* pages helpers */
 
 .page p { max-width: 700px; }
-.page h2 { font-weight: 400; max-width: 800px; }
+.page h2 { font-weight: 400; max-width: 620px; }
 
 #photo {
-  background-image: url('../images/lucas-mauess.jpg');
+  background-image: url('../images/lucas-maues-profile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eee;
   width: 50%;
   height: 100%;
-  right: 12%;
+  right: 0;
   position: absolute;
   z-index: -999;
 }
@@ -406,29 +402,31 @@ footer p {
 }
 .title h1 {
   font-weight: 700;
-  line-height: .95;
-  margin: 0;
+  line-height: 1;
+  margin: 0 0 2rem;
   max-width: 650px;
 }
 .title hr {
   margin: 2rem 0;
 }
 .title p {
-  max-width: 500px;
-  font-size: 3rem;
-  padding: 0 0 3rem;
+  font-size: 2.8rem;
+  padding: 0 0 2.8rem;
   margin: 0;
   line-height: 1.2;
 }
 .text p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
-  padding: 0 0 3.5rem;
+  padding: 0 0 2rem;
   max-width: 800px;
 }
-.text p b {
-  font-size: 3.5rem;
-  line-height: 1;
+.text p:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 0 3rem;
+  font-style: italic;
 }
 
 /* animations */
@@ -613,7 +611,7 @@ footer p {
   height: auto;
   color: #fff;
   background: #000;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border: none;
   border-radius: 0;
@@ -648,15 +646,15 @@ footer p {
 .card figure {
   float: left;
   margin: 0;
-  height: 140px;
-  width: 140px;
+  height: 130px;
+  width: 130px;
   background-color: transparent;
-  background-size: 140px;
+  background-size: 130px;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card h3 {
-  max-width: 480px;
+  max-width: 440px;
   margin: 0 0 1.5rem;
 }
 .card p {
@@ -693,9 +691,9 @@ footer p {
   text-align: center;
   background: #eee;
   overflow: hidden;
-  transition: -webkit-transform 0.25s cubic-bezier(0.625,0.125,0.305,0.875);
-  transition: transform 0.25s cubic-bezier(0.625,0.125,0.305,0.875);
-  transition: transform 0.25s cubic-bezier(0.625,0.125,0.305,0.875),-webkit-transform 0.25s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: -webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
+  transition: transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875),-webkit-transform 0.2s cubic-bezier(0.625,0.125,0.305,0.875);
 }
 /*.tile:hover, .tile:focus {
   box-shadow: 0 10px 50px rgba(0,0,0,0.3);
@@ -763,14 +761,13 @@ footer p {
 .tile a div {
   position: relative;
   vertical-align: middle;
-  display: inline-block;
-  padding: 4rem;
+  padding: 3.4rem;
 }
 .tile h3 {
   margin: 0 auto;
   padding: 0;
   color: #fff;
-  padding: 0 0 3rem;
+  padding: 0 0 2.4rem;
   line-height: 1;
 }
 .tile a:hover h3, .tile a:focus h3 {
@@ -780,8 +777,8 @@ footer p {
 .tile p {
   margin: 0 auto;
   color: #fff;
-  font-size: 2rem;
-  line-height: 1.25;
+  font-size: 1.8rem;
+  line-height: 1.2;
   max-width: 700px;
   padding: 0;
   width: auto;
@@ -944,7 +941,7 @@ footer p {
   background-position: 0 52%;
   text-align: left;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .contact a:hover, .contact a:focus {
   opacity: .8;
@@ -970,7 +967,7 @@ form textarea {
 }
 form input, form textarea, form label {
   font-weight: 600;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
  }
 form label {
@@ -980,7 +977,7 @@ form label {
  }
 form input, form textarea {
   float: left;
-  padding: 1.2rem 4%;
+  padding: 1.175rem 4%;
   margin: 0 0 4%;
   background: transparent;
   border: 2px solid #000;
@@ -999,7 +996,6 @@ form textarea:focus,  form textarea:active {
 }
 form input[type="submit"] {
   float: left;
-  display: inline-block;
   cursor: pointer;
   margin: 0;
 }
@@ -1236,8 +1232,8 @@ form input[type="submit"]:active {
   .tile p {
     font-size: 1.5rem;
   }
-  .text p b {
-    font-size: 2.25rem;
+  .text p:first-child {
+    font-size: 2rem;
   }
   .text p {
     padding: 0 0 1.5rem;
