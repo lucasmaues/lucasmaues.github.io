@@ -103,7 +103,7 @@ var textareas = document.querySelectorAll('.expanding'),
 
 })();
 
-// put current year
+// current year
 document.getElementById("year").innerHTML = (new Date().getFullYear());
 
 // console signature
