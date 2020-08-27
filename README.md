@@ -1,8 +1,10 @@
-# [lucasm.dev](https://lucasm.dev/)
+# Lucas Menezes — [lucasm.dev](https://lucasm.dev/)
 
-My personal website — a portfolio that works offline :)
+Lucasm.dev is the Lucas Menezes portfolio for show your projects as a software developer.
+A website that works offline, as a Progressive Web App.
 
-## Licences
+### Licences
 
-* All content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 * Source code is under [MIT License](https://mit-license.org/)
+* Typeface [DM Sans](https://fonts.google.com/specimen/DM+Sans)

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Check Site or App</title>
+    <meta name="description" content="Get insight about your web site or app. Check WHOIS, security, UX, performance, privacy policy and more.">
+  	<meta name="keywords" content="site checker, site audit, site analyzer">
+
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/app.css" rel="stylesheet" type="text/css">
+    <link rel="icon" sizes="192x192" type="image/png" href="images/icons/icon-192x192.png">
+	<meta name="theme-color" content="#000">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Lucasm.dev">
+	<link rel="manifest" href="manifest.json">
+
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-60745752-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-60745752-1');
+    </script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+	
+			<a id="logo" href="/" aria-label="logo" accesskey="1">Lucas Maués</a>
+			
+			<button class="menu" type="button">Menu<div class="hamburger"></div></button>
+
+			<nav>
+				<ul>
+                    <li><a href="work" accesskey="2">Work</a></li>
+					<li><a href="about" accesskey="3">About</a></li>
+					<li><a href="contact" accesskey="4">Contact</a></li>
+					<li><a href="https://medium.com/@lucasmezs" target="_blank" rel="noopener">Blog</a></li>
+				</ul>
+			</nav>
+			<div class="layer"></div>
+		
+		</div>
+	</header>
+
+    <main>
+    
+        <section class="fullscreen">
+            <div class="fullscreen-container">
+
+                <div class="container app">
+
+                    <div>
+                        <svg height="120px" width="120px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M64,0a64,64,0,1,0,64,64A64,64,0,0,0,64,0ZM92.13,35a9.1,9.1,0,0,1,6.46,2.66,9.2,9.2,0,0,1,0,12.93L59.8,89.34a9.21,9.21,0,0,1-12.94,0L29.63,72.09A9.14,9.14,0,1,1,42.55,59.17L53.33,70,85.66,37.62A9.09,9.09,0,0,1,92.13,35Z"/></svg>
+                    </div>
+
+                    <h1>Check Site or App</h1>
+                    <p>Your web site or app are really production-ready?</p>
+
+                    <div>
+                        <form id="check-form" method="get" action="https://www.google.com/search" accept-charset="UTF-8">
+                
+                            <div class="check-form">
+                                <label for="check-input">Search bar</label>
+                                <input id="check-input" type="url" name="q" value="" placeholder="Enter site/app URL" onkeypress="checkValue()" onkeyup="checkValue()" onchange="checkValue()" autocomplete="off" required="">
+
+                                <button id="reset-button" type="reset" onclick="resetForm()" aria-label="Clear" title="Clear"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>Reset</button>
+                                
+                                <button id="check-button" class="button" accesskey="1" type="submit" onclick="this.form.target='_blank';" aria-label="Check">Check</button>
+
+                                <input type="hidden" name="utm_source" value="lucasm_dev">
+                            </div>
+ 
+                        </form>
+
+                        <div id="actions">
+                            <button class="button">Markup validator</button>
+                            <button class="button">Performance & UX</button>
+                            <button class="button">Load speed</button>
+                            <button class="button">Security vulnerabilities</button>
+                            <button class="button">Identify technologies</button>
+                            <button class="button">WHOIS</button>
+                            <button class="button">Privacy policy</button>
+                            <button class="button">Audience metrics</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+			<p><a href="/" accesskey="5">Lucasm.dev</a> <br> &copy; <span id="year"></span> Lucas Menezes</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

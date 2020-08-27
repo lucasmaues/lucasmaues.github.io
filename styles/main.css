@@ -1,17 +1,4 @@
-@font-face{
-  font-family: 'SpaceGrotesk Bold';
-  src: url('../fonts/SpaceGrotesk-Bold.woff') format('woff'),
-      url('../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-      url('../fonts/SpaceGrotesk-Bold.otf') format('opentype');
-  font-weight: 700;
-}
-@font-face{
-  font-family: 'SpaceGrotesk Regular';
-  src: url('../fonts/SpaceGrotesk-Regular.woff') format('woff'),
-      url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-      url('../fonts/SpaceGrotesk-Regular.otf') format('opentype');
-  font-weight: 400;
-}
+@import url('//fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 :root { font-size: 16px; }
 *, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,7 +10,7 @@ html, body, main {
 body {
   display: block;
   text-align: center;
-  font-family: 'SpaceGrotesk Regular', monospace;
+  font-family: 'DM Sans', monospace;
   font-size: 0;
   background: #fff;
 }
@@ -252,7 +239,6 @@ button {
 
 p, li, h1, h2, h3, h4 {
   color: #000;
-  text-align: left;
 }
 p, ul {
   padding-bottom: 1.5rem;
@@ -268,11 +254,11 @@ li {
   padding: 0 0 .5rem .5rem;
 }
 p a, b, strong, .button, button, input[type="submit"] {
-  font-family: 'SpaceGrotesk Bold', monospace;
+  font-family: 'DM Sans', monospace;
   font-weight: 700;
 }
 h1, h2, h3, h4 {
-  font-family: 'SpaceGrotesk Bold', monospace;
+  font-family: 'DM Sans', monospace;
   font-weight: 700;
   line-height: 1.1;
   padding-bottom: 2rem;
@@ -352,15 +338,22 @@ article blockquote {
 }
 
 /* Helpers */
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
 .page {
   margin-top: 2rem;
 }
 .page h1 {
-  max-width: 750px;
+  max-width: 780px;
 }
 .page p {
-  max-width: 650px;
+  max-width: 680px;
 }
+
 
 #work h2 {
   text-align: center;
@@ -581,8 +574,9 @@ footer p {
   text-align: center;
 }
 
-/* contact form */
+/* Forms */
 form {
+  position: relative;
   display: block;
   float: left;
   width: 100%;
@@ -594,11 +588,11 @@ label {
 }
 input, textarea {
   font-weight: 400;
-  font-family: 'SpaceGrotesk Regular', monospace;
+  font-family: 'DM Sans', monospace;
   color: #000;
   float: left;
   width: 100%;
-  padding: .6rem 0;
+  padding: .582rem 0;
   margin: 0 0 2rem;
   line-height: 1.5;
   outline: none;
@@ -758,7 +752,7 @@ section .container {
 @media only screen and (min-width: 520px) {
 
   #photo {
-    width: 150px;
+    width: 144px;
   }
 
 }
@@ -804,7 +798,7 @@ section .container {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   h2, article h1 {
     font-size: 2.5rem;

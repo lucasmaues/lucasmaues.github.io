@@ -1,16 +1,3 @@
-// service worker
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-      // successful
-      console.log('Service Worker registered:', registration.scope);
-    }).catch(function(err) {
-      // failed
-      console.log('Service Worker registration failed:', err);
-    });
-  });
-}
-
 // define header for headroom.js
 // var header = document.querySelector("header");
 // new Headroom(header, {
@@ -106,5 +93,18 @@ var textareas = document.querySelectorAll('.expanding'),
 // current year
 document.getElementById("year").innerHTML = (new Date().getFullYear());
 
+// service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      // successful
+      console.log('Service Worker registered:', registration.scope);
+    }).catch(function(err) {
+      // failed
+      console.log('Service Worker registration failed:', err);
+    });
+  });
+}
+
 // console signature
-console.log('\n%cMade with <3 by Lucas Menezes', 'background:#000;color:#fff;padding:5px 10px;');
+console.log('\n%cLucasm.dev', 'background:#000;color:#fff;padding:5px 10px;');

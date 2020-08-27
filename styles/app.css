@@ -1,0 +1,47 @@
+.app .button svg {
+    padding: 0;
+    width: 100%;
+    margin: 1.25rem auto .5rem;
+}
+.app .button:hover svg,
+.app .button:focus svg {
+    fill: #fff;
+}
+
+.app h1, #actions {
+    margin-top: 2rem;
+}
+.app #actions button {
+    margin: .5rem;
+    word-wrap: break-word;
+}
+.app #reset-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 0 0 -62px;
+    font-size: 0;
+    padding: 0;
+    height: 48px;
+    width: 48px;
+    border: none;
+    color: #fff;
+    background: #000;
+}
+.app .container .button {
+    margin: .5rem 1rem .5rem 0;
+    text-align: center;
+    line-height: inherit;
+    padding-bottom: 1rem;
+}
+.app .check-form {
+    max-width: 600px;
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    background: yellow;
+}
+.app #check-input {
+    position: relative;
+    max-width: 600px;
+}
