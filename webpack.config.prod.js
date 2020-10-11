@@ -7,11 +7,11 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: './src/app.js',
+    devtool: 'source-map',
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
-    devtool: 'source-map',
     module: {
         rules: [
           {
