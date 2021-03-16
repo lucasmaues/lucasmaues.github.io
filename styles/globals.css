@@ -27,7 +27,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  padding: 1rem;
+  padding: .5rem 0;
   top: 0;
   right: 0;
   left: 0;
@@ -45,8 +45,7 @@ header .container {
   height: var(--header-size);
   font-size: 0;
   line-height: 0;
-  background: #fff;
-  border-radius: 50%;
+  background: transparent;
   z-index: 4;
 }
 #menu {
@@ -58,8 +57,7 @@ header .container {
   height: var(--header-size);
   outline: none;
   font-size: 0;
-  border-radius: 50%;
-  background: #fff;
+  background: transparent;
 }
 .hamburger {
   position: relative;
@@ -103,8 +101,8 @@ header .container {
 .layer {
   display: inline-block;
   background: transparent;
-  top: 1.6rem;
-  right: 2.35rem;
+  top: 1.7rem;
+  right: 2.45rem;
   width: 3px;
   height: 3px;
   position: absolute;
@@ -114,9 +112,8 @@ header .container {
   z-index: 2;
  }
 .layer-active {
-  box-shadow: 0 0 0 100vw var(--cor-cinza), 0 0 0 100vh var(--cor-cinza);
+  box-shadow: 0 0 0 125vw var(--cor-cinza), 0 0 0 125vh var(--cor-cinza);
 }
-
 .remove-scrollbar {
   overflow: hidden;
 }
@@ -342,14 +339,15 @@ article blockquote {
   padding: 6rem 0 4rem;
 }
 .home h2, .home p {
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
 }
 .home h2 {
   line-height: 1.2;
 }
-.home p, .description {
-  font-size: 1.4rem;
-  line-height: 1.4;
+.description {
+  font-size: 1.5rem;
+  max-width: 650px;
+  margin: 0 auto;
 }
 #photo {
   float: none;
@@ -364,19 +362,19 @@ article blockquote {
 /* Social icons */
 .icons {
   max-width: 750px;
-  margin: 1.5rem auto 0;
+  margin: .5rem auto 0;
 }
 .icons a {
   float: none;
   display: inline-block;
   width: auto;
-  padding: 1rem;
+  padding: .75rem;
   line-height: 1;
   margin: .5rem;
   font-size: 0;
   background: var(--cor-cinza);
   border: 3px solid transparent;
-  border-radius: var(--radius);
+  border-radius: 50%;
 }
 .icons a:hover, .icons a:focus {
   background: transparent;
@@ -477,7 +475,7 @@ code {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* gifs for warning pages */
@@ -668,9 +666,10 @@ section .container {
   }
 
   .icons a {
-    margin: 1rem;
+    margin: .75rem;
     padding: 1rem 1.5rem;
     font-size: 1rem;
+    border-radius: var(--radius);
   }
   .icons svg {
     margin: 0 .5rem -.3rem 0;
@@ -717,24 +716,20 @@ section .container {
   .home h2 {
     font-size: 3.4rem;
   }
-
   h1, article h1 {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   h3, h4, article h2 {
     font-size: 1.6rem;
   }
-  .special p, .card p {
-    font-size: 1.25rem;
+  .special p, .card p, article p {
+    font-size: 1.2rem;
   }
   p, li, nav a, .button, input, textarea {
     font-size: 1rem;
-  }
-  article p {
-    font-size: 1.1rem
   }
   section {
     padding: 5rem 5rem;

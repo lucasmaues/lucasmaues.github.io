@@ -14,7 +14,7 @@ export default function Home() {
                     <img src="/images/lucas-menezes.jpg" id="photo" alt="Lucas Menezes"/>
 
                     <h2>Lucas Menezes</h2>
-                    <p>Software Engineer</p>
+                    <p className="description">Software Engineer</p>
 
                     <div className="icons">
                         <a href="https://twitter.com/lucasmezs" target="_blank" rel="noopener" title="Twitter">
@@ -53,7 +53,7 @@ export default function Home() {
 
                     <h2>Projects</h2>
 
-                    <p className="description">Digital products built with <code>code</code></p>
+                    {/* <p className="description">Built with <code>code</code>.</p> */}
 
                     <div className="grid">
 
@@ -62,7 +62,7 @@ export default function Home() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path className="svg" d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"/></svg>
                             </figure>
                             <h3>Headly</h3>
-                            <p>Internationalized news reader app with headlines, fact-checking and opnions.</p>
+                            <p>News reader app with headlines, fact-checking and opinions, internationalized.</p>
                         </a>
 
                         <a href="#" className="card">
@@ -160,14 +160,14 @@ export default function Home() {
 
                 <div className="col">
                     <div className="col-left">
-                        <p>I’ve been developing Web applications, sites and APIs for startups and organizations of all sizes, helping them to solve problems and establish an online presence with refined digital products.</p>
+                        <p>I’ve been working as consultant for organizations and startups of all sizes, helping them to solve their problems and establish an online presence with refined digital products. </p>
 
                         <p>I build front-end with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance — and adjacent back-end too.</p>
                     </div>
                     <div className="col-right">
-                        <p>JavaScript, HTML, CSS, React, Next.js, Node.js, PHP, Git, REST APIs, MySQL, PostgreSQL, Vercel, AWS and Microsoft Azure are my current main work tools.</p>
-
-                        <p>Now I’m working at TCM-PA and creating open source PWAs. Feel free to contact me to discuss your project or idea.</p>
+                        <p>JavaScript, TypeScript, HTML, CSS, Node.js, React, Next.js, PHP, WordPress, Git, REST APIs, MySQL, PostgreSQL, Vercel, AWS and Microsoft Azure are my current main work tools. I’m also love creating and learning with open source.</p>
+                        
+                        <p>Feel free to contact me to discuss your project or idea.</p>
                     </div>
                     
                 </div>
@@ -178,7 +178,7 @@ export default function Home() {
         <section className="black">
             <div className="container special-contact">
 
-                <h2>Say hi — <a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a></h2>
+                <h2>Say — <a href="mailto:hey@lucasm.dev">hey@lucasm.dev</a></h2>
 
             </div>
         </section>

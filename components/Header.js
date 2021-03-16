@@ -1,7 +1,7 @@
 // components/Header.js
 
-import React, { useState } from "react";
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
 
